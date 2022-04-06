@@ -4,7 +4,7 @@ const server = require('./server');
 
 const port = require('./port.json');
 
-jest.mock('./postgres-url.json', () => '');
+jest.mock('./postgres-url.json', () => '', { virtual: true });
 
 const testData = {
   username: 'test',
