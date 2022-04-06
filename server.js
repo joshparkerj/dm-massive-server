@@ -4,6 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const massive = require('massive');
 
+// eslint-disable-next-line import/no-unresolved
 const postgresUrl = require('./postgres-url.json');
 const port = require('./port.json');
 
