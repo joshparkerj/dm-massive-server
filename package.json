@@ -4,16 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "lint": "npx eslint \"./*.js\" \"./__mocks__/*.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.4",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
     "express": "^4.16.3",
-    "massive": "^5.4.0",
-    "nodemon": "^1.18.4"
+    "massive": "^6.10.2",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "axios": "^0.26.1",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.3",
+    "jest": "^27.5.1"
   }
 }
